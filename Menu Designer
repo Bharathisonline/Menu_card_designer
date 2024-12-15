@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Menu Card Designer - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Menu Card Designer</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Transform Your Menu into a Visual Experience</h2>
+      <p>Custom-designed menu cards that match your brand's style</p>
+      <a href="#portfolio" class="cta-btn">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Our Work</h2>
+      <div class="grid">
+        <!-- Portfolio Items -->
+        <div class="portfolio-item">
+          <img src="menu1.jpg" alt="Menu 1">
+          <p>Elegant Restaurant Menu</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="menu2.jpg" alt="Menu 2">
+          <p>Minimalist Cafe Menu</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="menu3.jpg" alt="Menu 3">
+          <p>Event Catering Menu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Custom Menu Cards</h3>
+          <p>Tailored designs that match your restaurant's vibe.</p>
+        </div>
+        <div class="service-item">
+          <h3>Brand Consultation</h3>
+          <p>Get expert advice to make your brand shine through your menus.</p>
+        </div>
+        <div class="service-item">
+          <h3>Rebranding</h3>
+          <p>Refresh your menu and stay current with modern designs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Menu Card Designer specializes in creating visually stunning and unique menu cards that match the essence of your business. Whether it's a cozy cafe or a fine dining restaurant, we craft designs that elevate your customer’s experience.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="submit-form.php" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Follow us on Instagram: <a href="https://instagram.com/menu_card_designer" target="_blank">@menu_card_designer</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Menu Card Designer. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav ul li a:hover {
+  color: #ffa500;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #ff7f00;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.portfolio .container {
+  text-align: center;
+}
+
+.portfolio h2 {
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-item p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Services Section */
+.services {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.services .container {
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.service-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-item p {
+  color: #666;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.about .container {
+  text-align: center;
+}
+
+.about p {
+  color: #666;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.contact .container {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff7f00;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+footer a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff7f00;
+}
+
+// Placeholder for potential future interactions like form validation or smooth scrolling
